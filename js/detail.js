@@ -25,7 +25,12 @@ $(function() {
               
               var eventdetail = "<div class='event-detail'><h4>"+ f.title +"</h4><div class='star-rating'><div class='rating rating-"+ f.rating +"'></div><img src='/images/star.png'></div><span class='speaker-detail month'>Streamed live on " + f.date + "</span><p class='event-content'>"+ f.details +"</p><h4>Speakers</h4></div>"
               $(eventdetail).appendTo("#event-detail-wrap");
-
+              var count = 1;
+              while (count<5){
+                var gallery = "<img src='/location/"+ location +"/gallery/"+f.eventID+"/"+count+".jpg'>"
+                $(gallery).appendTo("#gallery-wrap");
+                count++;
+              }
               $.each(data.speakers, function(j, sp) {
                 
                 $.each(f.speakers, function(k, spkr) {

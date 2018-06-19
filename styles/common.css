@@ -524,6 +524,9 @@ h4.filter-title {
       .main-nav li a:hover {
         color: #87c042; }
 
+#gallery-wrap {
+  position: relative; }
+
 @media only screen and (min-width: 768px) {
   .content {
     min-height: 400px; }
